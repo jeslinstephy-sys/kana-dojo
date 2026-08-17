@@ -2,7 +2,12 @@ import { toHiragana } from 'wanakana';
 import type { IVocabObj } from '@/entities/vocabulary';
 
 const normalize = (value: string): string =>
-  value.trim().normalize('NFC').toLowerCase();
+  value
+    .replace(/[\u200B-\u200D\uFEFF]/g, '')
+    .replace(/\u00A0/g, ' ')
+    .trim()
+    .normalize('NFC')
+    .toLowerCase();
 
 const normalizeMeaning = (value: string): string =>
   normalize(value).replace(/^to\s+/, '');
@@ -25,7 +30,6 @@ export const isVocabularyMeaningAnswerCorrect = (
 
   return (
     normalize(vocabulary.word) === normalizedAnswer ||
-    toHiragana(normalizedAnswer) ===
-      toHiragana(normalize(vocabulary.reading))
+    toHiragana(normalizedAnswer) === toHiragana(normalize(vocabulary.reading))
   );
 };
