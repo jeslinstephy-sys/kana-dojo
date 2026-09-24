@@ -228,5 +228,11 @@
   "wrong": "会議は三時からで始まります。",
   "correct": "会議は三時から始まります。",
   "explanation": "Remove unnecessary particle after から. (Pattern set 4)"
+},
+{
+  "wrong": "宿題を忘れないよう、メモします。",
+  "correct": "宿題を忘れないように、メモします。",
+  "explanation": "Use ように for purpose/prevention. (Pattern set 3)"
 }
+
 ]
