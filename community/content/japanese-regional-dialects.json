@@ -313,5 +313,12 @@
   "english": "very",
   "region": "Nagoya",
   "note": "Characteristic Nagoya intensifier. (Set 2)"
+},
+{
+  "dialect": "〜けん",
+  "standardJapanese": "〜から",
+  "english": "because",
+  "region": "Kyushu",
+  "note": "Reason marker in Kyushu. (Set 1)"
 }
 ]
