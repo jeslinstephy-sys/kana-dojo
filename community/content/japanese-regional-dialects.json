@@ -320,5 +320,12 @@
   "english": "because",
   "region": "Kyushu",
   "note": "Reason marker in Kyushu. (Set 1)"
+},
+{
+  "dialect": "なまら",
+  "standardJapanese": "とても",
+  "english": "very",
+  "region": "Hokkaido",
+  "note": "Hokkaido intensifier. (Set 4)"
 }
 ]
